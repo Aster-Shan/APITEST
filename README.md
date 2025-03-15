@@ -110,19 +110,19 @@ The application follows a standard Spring Boot architecture with the following c
 
 The application implements comprehensive error handling:
 
-1. **Try-Catch Blocks**:
+**Try-Catch Blocks**:
 
 1. Catches exceptions during API calls
 2. Returns appropriate error responses
 
 
 
-2. **Global Exception Handler**:
+**Global Exception Handler**:
 
 1. Handles application-wide exceptions
 2. Formats error responses consistently
 
-3. **Null Checking**:
+**Null Checking**:
 
 1. Validates API responses
 2. Handles cases where data is missing
