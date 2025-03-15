@@ -75,14 +75,14 @@ The application will start on port 8080 by default.
 
 The application follows a standard Spring Boot architecture with the following components:
 
-1. **Controller Layer** (`ApiController`):
+**Controller Layer** (`ApiController`):
 
 1. Handles HTTP requests
 2. Maps endpoints to service methods
 3. Returns appropriate HTTP responses
 
 
-2. **Service Layer** (`ApiService`):
+**Service Layer** (`ApiService`):
 
 1. Contains business logic
 2. Communicates with external APIs
@@ -90,14 +90,14 @@ The application follows a standard Spring Boot architecture with the following c
 
 
 
-3. **Model Layer** (`ApiModel`):
+**Model Layer** (`ApiModel`):
 
 1. Defines data structures
 2. Maps JSON responses to Java objects
 
 
 
-4. **Configuration** (`AppConfig`, `SecurityConfig`):
+**Configuration** (`AppConfig`, `SecurityConfig`):
 
 1. Configures application components
 2. Sets up security rules
