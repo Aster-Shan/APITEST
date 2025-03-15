@@ -1,19 +1,19 @@
-# JSONPlaceholder API Integration
+#JSONPlaceholder API Integration
 
 A Spring Boot application that integrates with the JSONPlaceholder API to fetch post data, process it, and return it in a structured JSON format.
 
-## Overview
+##Overview
 
 This application fetches data from the JSONPlaceholder API, extracts specific fields (userId, id, title, body), and returns the data in a structured JSON format. It includes error handling for API failures and missing data.
 
-## Setup Instructions
+##Setup Instructions
 
-### Prerequisites
+###Prerequisites
 - Java 17 or higher
 - Maven 3.6 or higher
 - Spring Boot 3.x
 
-### Installation
+###Installation
 
 1. Clone the repository:
 https://github.com/Aster-Shan/APITEST.git
@@ -23,10 +23,10 @@ https://github.com/Aster-Shan/APITEST.git
 Add the following to your `application.properties` file:
 ```properties
 
-# API Configuration
+#API Configuration
 api.url=https://jsonplaceholder.typicode.com/posts/1
 
-# Error Handling Configuration
+#Error Handling Configuration
 spring.mvc.throw-exception-if-no-handler-found=true
 spring.web.resources.add-mappings=false
 
@@ -42,9 +42,9 @@ mvn spring-boot:run
 ```
 The application will start on port 8080 by default.
 
-## API Endpoints
+##API Endpoints
 
-### Get Post Data
+###Get Post Data
 
 - **URL**: `/api/post`
 - **Method**: GET
@@ -69,9 +69,9 @@ The application will start on port 8080 by default.
 ```
 
 
-## Approach
+##Approach
 
-### Architecture
+###Architecture
 
 The application follows a standard Spring Boot architecture with the following components:
 
@@ -106,7 +106,7 @@ The application follows a standard Spring Boot architecture with the following c
 
 
 
-### Error Handling
+###Error Handling
 
 The application implements comprehensive error handling:
 
@@ -127,7 +127,7 @@ The application implements comprehensive error handling:
 1. Validates API responses
 2. Handles cases where data is missing
 
-### Security
+###Security
 
 The application includes basic security configuration:
 
